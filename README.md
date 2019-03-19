@@ -1,13 +1,9 @@
-# agile_grasp
-
-* **Author:** Andreas ten Pas (atp@ccs.neu.edu)
-* **Version:** 1.0.0
-* **ROS Wiki page:** [http://wiki.ros.org/agile_grasp](http://wiki.ros.org/agile_grasp)
-* **Author's website:** [http://www.ccs.neu.edu/home/atp/](http://www.ccs.neu.edu/home/atp/)
-
-<img src="screenshots/example1.png" alt="" style="width: 400px;"/>
-
-
 ## 1) Instructions
+- Run the single_camera.launch launch file:
+  roslaunch agile_grasp single_camera_grasps.launch 
 
-Please look at http://wiki.ros.org/agile_grasp for detailed instructions.
+- Publish the pointcloud of the object you want to grasp using the following command:
+  rosrun pcl_ros pcd_to_pointcloud /home/suhail/Downloads/004_sugar_box/clouds/outfilefile.pcd 0.1 _frame_id:=/camera_link
+
+
+
